@@ -1,5 +1,7 @@
-const express = require("express");
-const DataStore = require("nedb");
+import express from "express";
+import DataStore  from "nedb";
+// const express = require("express");
+// const DataStore = require("nedb");
 const route = express.Router();
 const ContactUs_db = new DataStore({ filename: "Database/Contact.db", autoload: true })
 
@@ -30,4 +32,4 @@ route.get('/',async (req,resp)=>{
         }
     })
 
-    module.exports = route;
+    export default route;

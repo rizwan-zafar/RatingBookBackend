@@ -1,5 +1,7 @@
-const express = require("express");
-const DataStore = require("nedb");
+// const express = require("express");
+// const DataStore = require("nedb");
+import express from "express";
+import DataStore  from "nedb";
  const route = express.Router();
 const booksRating_db = new DataStore({ filename: "Database/booksRating.db", autoload: true })
 
@@ -172,4 +174,4 @@ const booksRating_db = new DataStore({ filename: "Database/booksRating.db", auto
         }
     })
 
-module.exports = route;
+export default route;

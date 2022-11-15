@@ -1,10 +1,16 @@
-const express = require('express');
+// const express = require('express');
+// const cors = require('cors');
+// const BooksRatingController = require("./RouteController/BooksRatingController");
+// const ContactUsController = require("./RouteController/ContactUsController");
+import express from 'express';
+import cors from 'cors';
+import BooksRatingController from "./RouteController/BooksRatingController.js";
+import ContactUsController from "./RouteController/ContactUsController.js";
+
+
  const app = express();
 app.use(express.json());
-const cors = require('cors');
  app.use(cors());
-const BooksRatingController = require("./RouteController/BooksRatingController");
-const ContactUsController = require("./RouteController/ContactUsController");
  
 
 // Smoke Test Api
@@ -12,6 +18,11 @@ app.get("/bookSmokeTest", async (req, resp) => {
     resp.send("Smoke Test Successful for Book Rating Project")
 })
 
+app.use((req, resp, next) => {
+    resp.setHeader('Access-Control-Allow-Origin', '*')
+    resp.setHeader('Access-Control-Allow-Headers', '*')
+    next();
+})
 // Books Routs
 app.use('/books/api/v1', BooksRatingController);
 // Contact Routes
