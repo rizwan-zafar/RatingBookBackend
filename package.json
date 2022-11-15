@@ -2,7 +2,7 @@
   "name": "booksrating-backend",
   "version": "1.0.0",
   "description": "its containing all backend of Books Rating Project",
-  "main": "index.js",
+  "main": "server.js",
   "type":"module",
   "engines": {
     "node": ">=13.x.x",
