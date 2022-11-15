@@ -28,6 +28,6 @@ app.use('/books/api/v1', BooksRatingController);
 // Contact Routes
 app.use("/contact/api/v1", ContactUsController)
 
-app.listen(1000, () => {
+app.listen(process.env.PORT || 1000, () => {
     console.log("Node Served Started");
 })
