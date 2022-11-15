@@ -1,10 +1,10 @@
 const express = require("express");
 const DataStore = require("nedb");
-const route = express.Router();
+ const route = express.Router();
 const booksRating_db = new DataStore({ filename: "Database/booksRating.db", autoload: true })
 
 
-    /** 
+    /**
      * *Get All Books api
      * *EndPoint: /books/api/v1
      * @returns allbooks

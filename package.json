@@ -1,8 +1,13 @@
 {
   "name": "booksrating-backend",
   "version": "1.0.0",
-  "description": "its containg all backend of Books Rating Project",
+  "description": "its containing all backend of Books Rating Project",
   "main": "index.js",
+   
+  "engines": {
+    "node": ">=6.x.x",
+    "npm":">=3.9.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,10 +1,11 @@
 const express = require('express');
-const app = express();
+ const app = express();
 app.use(express.json());
 const cors = require('cors');
-app.use(cors());
+ app.use(cors());
 const BooksRatingController = require("./RouteController/BooksRatingController");
 const ContactUsController = require("./RouteController/ContactUsController");
+ 
 
 // Smoke Test Api
 app.get("/bookSmokeTest", async (req, resp) => {
