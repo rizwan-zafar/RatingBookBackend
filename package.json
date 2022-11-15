@@ -1,0 +1,16 @@
+{
+  "name": "booksrating-backend",
+  "version": "1.0.0",
+  "description": "its containg all backend of Books Rating Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rizwan Zafar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nedb": "^1.8.0"
+  }
+}
