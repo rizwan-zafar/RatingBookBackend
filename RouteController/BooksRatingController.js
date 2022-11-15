@@ -4,7 +4,7 @@ const route = express.Router();
 const booksRating_db = new DataStore({ filename: "Database/booksRating.db", autoload: true })
 
 
-    /**
+    /** 
      * *Get All Books api
      * *EndPoint: /books/api/v1
      * @returns allbooks
